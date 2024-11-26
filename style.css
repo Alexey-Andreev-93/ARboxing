@@ -651,13 +651,21 @@ form input {
   .header__image {
     width: 100vw;;
     grid-template-columns: repeat(1fr);
-    mask-size: 220%;
+    mask-size: 450%;
     mask-position: center;
   }
 
   .header__content {
     width: 100vw;
     text-align: center;
+  }
+
+  .header__content h1 {
+    font-size: 40px;
+  }
+
+  .header__content p {
+    font-size: 14px;
   }
 
   .explore__header {
