@@ -647,16 +647,22 @@ form input {
 }
 
 @media (width < 600px) {
+  .section__container {
+    padding: 1rem 1rem;
+    margin: 0;
+  }
+
+  .section__header {
+    font-size: 1.5rem;
+  }
 
   .header__image {
-    width: 100vw;;
     grid-template-columns: repeat(1fr);
     mask-size: 450%;
     mask-position: center;
   }
 
   .header__content {
-    width: 100vw;
     text-align: center;
   }
 
