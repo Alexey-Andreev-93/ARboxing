@@ -255,7 +255,6 @@ nav {
 .explore__card:hover {
     background-color: var(--primary-color-extra-light);
     border-color: var(--secondary-color);
-    transform: translateY(-10px);
 }
 
 .explore__card span {
