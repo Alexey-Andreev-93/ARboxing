@@ -605,9 +605,7 @@ form input {
   .nav__links {
     display: none;
   }
-  .header__section {
-    font-size: 1.5rem;
-  }
+ 
   .header__container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -651,14 +649,15 @@ form input {
 @media (width < 600px) {
 
   .header__image {
+    width: 100vw;;
     grid-template-columns: repeat(1fr);
     mask-size: 220%;
     mask-position: center;
   }
 
   .header__content {
+    width: 100vw;
     text-align: center;
-    width: 100vh;
   }
 
   .explore__header {
