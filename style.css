@@ -255,6 +255,7 @@ nav {
 .explore__card:hover {
     background-color: var(--primary-color-extra-light);
     border-color: var(--secondary-color);
+    transform: translateY(-10px);
 }
 
 .explore__card span {
@@ -447,13 +448,11 @@ nav {
     color: var(--white);
 }
 
-.review {
-  background-color: var(--primary-color-light);
-}
-
 .review__container {
   display: flex;
   gap: 2rem;
+  background: var(--primary-color-extra-light);
+  border-radius: 10px;
 }
 
 .review__container > span {
@@ -568,9 +567,11 @@ form {
     border-radius: 10px;
     width: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    gap: 20px;
+    background: rgba(0, 0, 0, .3);
     padding: 2rem 5rem;
 }
 
@@ -592,7 +593,14 @@ form {
   right: 0;
 }
 
-
+form input {
+    background: transparent;
+    color: var(--white);
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 50px var(--secondary-color);
+    border-radius: 10px;
+}
 
 @media (width < 900px) {
   .nav__links {
