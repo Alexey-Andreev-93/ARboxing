@@ -649,6 +649,17 @@ form input {
 }
 
 @media (width < 600px) {
+
+  .header__image {
+    grid-template-columns: repeat(1fr);
+    mask-size: 220%;
+    mask-position: center;
+  }
+
+  .header__content {
+    text-align: center;
+  }
+
   .explore__header {
     flex-direction: column;
   }
@@ -657,13 +668,16 @@ form input {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .class__image {
-    max-width: 375px;
+  .class__container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
-  .class__img-1 {
-    max-width: 100px;
+  .class__image .class__img-1 {
+    max-width: 200px;
+    right: 0;
   }
+
 
   .join__container {
     margin-bottom: 15rem;
@@ -673,6 +687,14 @@ form input {
     width: 100%;
     margin: 0;
     bottom: -20rem;
+  }
+
+  .join__card__content h1{
+    font-size: 20px;
+  }
+
+  .join__card__content p {
+    font-size: 12px;
   }
 
   .price__grid {
