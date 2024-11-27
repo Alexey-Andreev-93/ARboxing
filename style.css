@@ -3,12 +3,13 @@
 :root {
     --primary-color: #030303;
     --primary-color-light: #1d1b1b;
-    --primary-color-extra-light: #3d3b3b;
+    --primary-bg-gradient: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
     --secondary-color: #eb1414;
     --secondary-color-dark: #a81717;
     --text-ligth: #d1d5db;
     --white: #ffffff;
     --max-width: 1200px;
+    --border-radius: 1rem;
 }
 
 *{
@@ -48,7 +49,7 @@
     font-size: 1rem;
     color: var(--white);
     background-color: var(--secondary-color);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     cursor: pointer;
     transition: .3s;
 }
@@ -246,14 +247,16 @@ nav {
 
 .explore__card {
     padding: 1rem;
-    background-color: var(--primary-color-light);
+    background-color: transparent;
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+    background-image: var(--primary-bg-gradient);
     border: 2px solid transparent;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     transition: .3s;
-}g
+}
 
 .explore__card:hover {
-    background-color: var(--primary-color-extra-light);
     border-color: var(--secondary-color);
 }
 
@@ -264,7 +267,7 @@ nav {
     font-size: 1.75rem;
     color: var(--white);
     background-color: var(--secondary-color-dark);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 .explore__card h4 {
@@ -303,7 +306,7 @@ nav {
     right: 0;
     top: 0;
     max-width: 400px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
 }
 
 .class__image .class__img-2 {
@@ -311,7 +314,7 @@ nav {
     left: 0;
     bottom: 0;
     max-width: 200px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
 }
 
 .class__content {
@@ -337,7 +340,7 @@ nav {
 }
 
 .join__image img {
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     max-width: var(--max-width);
 }
 
@@ -350,8 +353,12 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    background-color: var(--primary-color-light);
-    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+    background-image: var(--primary-bg-gradient);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius);
 }
 
 .join__card {
@@ -366,7 +373,7 @@ nav {
     font-size: 1.75rem;
     color: var(--white);
     background-color: var(--secondary-color-dark);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 .join__card h4 {
@@ -377,7 +384,7 @@ nav {
 }
 
 .join__card p {
-    color: var(--text-ligth);
+    color: var(--white);
 }
 
 .price__grid {
@@ -391,16 +398,18 @@ nav {
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
-    background-color: var(--primary-color-light);
+    background-color: transparent;
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+    background-image: var(--primary-bg-gradient);
     border: 2px solid transparent;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     transition: .3s;
 }
 
 .price__card:hover {
     background-color: var(--primary-color-extra-light);
     border-color: var(--secondary-color);
-    transform: scale(1.05);
 }
 
 .price__card__content {
@@ -450,8 +459,12 @@ nav {
 .review__container {
   display: flex;
   gap: 2rem;
-  background: var(--primary-color-extra-light);
-  border-radius: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+  background-image: var(--primary-bg-gradient);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
 }
 
 .review__container > span {
@@ -498,7 +511,7 @@ nav {
 
 .review__member img {
   max-width: 60px;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .review__member__details h4 {
@@ -518,7 +531,7 @@ nav {
 }
 
 .map{
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     box-shadow: 10px -10px 50px rgba(255, 255, 255, 0.5);
 }
 
@@ -547,7 +560,7 @@ nav {
 	font-size: 1.25rem;
 	color: var(--secondary-color);
 	border: 1px solid var(--secondary-color);
-	border-radius: 100%;
+	border-radius: 50%;
 	transition: 0.3s;
 }
 
@@ -562,15 +575,18 @@ nav {
 
 form {
     border: none;
-    box-shadow: inset 3px -3px 25px 1px var(--primary-color-extra-light);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background: rgba(0, 0, 0, .3);
+    background-color: transparent;
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+    background-image: var(--primary-bg-gradient);
+    border: 2px solid transparent;
     padding: 2rem 5rem;
 }
 
@@ -583,8 +599,9 @@ form {
 }
 
 .form h1 {
-    font-size: px;
     text-align: center;
+    font-family: "Rubik Dirt", sans-serif;
+    font-weight: 400;
 }
 
 .footer__blur {
@@ -593,12 +610,12 @@ form {
 }
 
 form input {
-    background: transparent;
+    background: var(--primary-color-light);
     color: var(--white);
     border: none;
     outline: none;
-    box-shadow: 1px 1px 50px var(--secondary-color);
-    border-radius: 10px;
+    padding: 5px 15px;
+    border-radius: var(--border-radius);
 }
 
 @media (width < 900px) {
