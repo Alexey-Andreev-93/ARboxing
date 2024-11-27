@@ -251,7 +251,7 @@ nav {
 
 .explore__card {
     padding: 1rem;
-    background-color: transparent;
+    background: transparent;
     backdrop-filter: blur(1.5rem);
     -webkit-backdrop-filter: blur(1.5rem);
     background-image: var(--primary-bg-gradient);
@@ -467,7 +467,7 @@ nav {
 .review__container {
   display: flex;
   gap: 2rem;
-  background-color: transparent;
+  background: transparent;
   backdrop-filter: blur(1.5rem);
   -webkit-backdrop-filter: blur(1.5rem);
   background-image: var(--primary-bg-gradient);
@@ -590,7 +590,7 @@ form {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: transparent;
+    background: transparent;
     backdrop-filter: blur(1.5rem);
     -webkit-backdrop-filter: blur(1.5rem);
     background-image: var(--primary-bg-gradient);
@@ -689,8 +689,8 @@ form input {
 
   .header__image {
     grid-template-columns: repeat(1fr);
-    mask-size: 450%;
-    mask-position: center;
+    mask-size: cover;
+    mask-position: center -1.5rem;
   }
 
   .header__content {
