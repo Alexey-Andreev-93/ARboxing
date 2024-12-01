@@ -57,6 +57,7 @@
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: .3s;
+    position: relative;
 }
 
 .btn:hover {
@@ -103,15 +104,6 @@ nav {
 .nav__logo img {
     border-radius: 50%;
     max-width: 50px;
-}
-
-.nav__logo svg path {
-    fill: transparent;
-    stroke: #eb1414;
-    stroke-width: 0.1;
-    stroke-dasharray: 50;
-    stroke-dashoffset: 50;
-    animation: textAnimation 6s ease-in-out 1 forwards;
 }
 
 .nav__logo span {
@@ -212,7 +204,7 @@ nav {
 }
 
 .header__image img {
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -690,7 +682,7 @@ form input {
   .header__image {
     grid-template-columns: repeat(1fr);
     mask-size: cover;
-    mask-position: center -1.5rem;
+    mask-position: -16.5rem -2rem;
   }
 
   .header__content {
@@ -786,10 +778,19 @@ form input {
 @keyframes leftShowAnimation {
     0% {
         opacity: 0;
-        transform: translateX(-2000px) scale(0.3);
+        transform: translateX(-3000px) scale(0.3);
     }30%,100% 
     {
         opacity: 1;
         transform: translateX(0) scale(1);
     }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
